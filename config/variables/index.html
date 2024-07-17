@@ -80,6 +80,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#tags" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -345,6 +350,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Global variables
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -355,6 +373,52 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#symbols" class="md-nav__link">
+    <span class="md-ellipsis">
+      Symbols
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#colours" class="md-nav__link">
+    <span class="md-ellipsis">
+      Colours
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#players" class="md-nav__link">
+    <span class="md-ellipsis">
+      Players
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -385,6 +449,43 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#symbols" class="md-nav__link">
+    <span class="md-ellipsis">
+      Symbols
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#colours" class="md-nav__link">
+    <span class="md-ellipsis">
+      Colours
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#players" class="md-nav__link">
+    <span class="md-ellipsis">
+      Players
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -407,9 +508,115 @@
   
 
 
-  <h1>Global variables</h1>
-
-
+<h1 id="tags">Tags</h1>
+<p>These tags can be used in any message, and are used for formatting messages. Right now, you can't add custom tags for custom colors
+and/or symbols yet, however this will be possible in later versions.</p>
+<p>Some tags like <strong>{PLAYER}</strong> and <strong>{TARGET}</strong> have some styles applied to them automatically (<strong>{C:player}</strong>). If you want to use 
+different colors for this, you can use <strong>{PLAYER:UNFORMATTED}</strong> and <strong>{TARGET:UNFORMATTED}</strong>. This will return just the value with 
+no colors.</p>
+<p>Also do note, you can't use tags such as <strong>{PLAYER}</strong> or <strong>{TARGET}</strong> (or their unformatted counterpart) in every message. They can 
+only be used in the messages that use them already.</p>
+<h3 id="symbols">Symbols</h3>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Default Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>{S:warn}</strong></td>
+<td>⚠</td>
+<td>Warn symbol</td>
+</tr>
+<tr>
+<td><strong>{S:error}</strong></td>
+<td>✖</td>
+<td>Error symbol</td>
+</tr>
+<tr>
+<td><strong>{S:success}</strong></td>
+<td>✔</td>
+<td>Success symbol</td>
+</tr>
+</tbody>
+</table>
+<h3 id="colours">Colours</h3>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Default Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>{C:primary}</strong></td>
+<td>&amp;e</td>
+<td>Yellow</td>
+</tr>
+<tr>
+<td><strong>{C:divider}</strong></td>
+<td>&amp;8</td>
+<td>Gray</td>
+</tr>
+<tr>
+<td><strong>{C:success}</strong></td>
+<td>&amp;a</td>
+<td>Lime</td>
+</tr>
+<tr>
+<td><strong>{C:error}</strong></td>
+<td>&amp;c</td>
+<td>Red</td>
+</tr>
+<tr>
+<td><strong>{C:player}</strong></td>
+<td>&amp;b</td>
+<td>Aqua/Cyan</td>
+</tr>
+</tbody>
+</table>
+<h3 id="players">Players</h3>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Default Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>{PLAYER}</strong></td>
+<td>None</td>
+<td>Returns the primary player (usually the player than ran the command or triggered the event).</td>
+</tr>
+<tr>
+<td><strong>{PLAYER:UNFORMATTED}</strong></td>
+<td>None</td>
+<td>Returns the primary player without the default player colour.</td>
+</tr>
+<tr>
+<td><strong>{TARGET}</strong></td>
+<td>None</td>
+<td>Returns the target player</td>
+</tr>
+<tr>
+<td><strong>{TARGET:UNFORMATTED}</strong></td>
+<td>None</td>
+<td>Returns the target player without the default player colour.</td>
+</tr>
+<tr>
+<td><strong>{MESSAGE}</strong></td>
+<td>None</td>
+<td>Returns the message. Mainly used for /chat and the custom chat format.</td>
+</tr>
+</tbody>
+</table>
 
 
 
