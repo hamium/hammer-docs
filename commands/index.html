@@ -82,6 +82,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#hammer" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -282,6 +287,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Commands
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -291,6 +307,92 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hammer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hammer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tpa" class="md-nav__link">
+    <span class="md-ellipsis">
+      TPA
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#home" class="md-nav__link">
+    <span class="md-ellipsis">
+      Home
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chat
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chat">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chat-spy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chat → Spy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chat-ignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chat → Ignore
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Teams
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -386,6 +488,83 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hammer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hammer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tpa" class="md-nav__link">
+    <span class="md-ellipsis">
+      TPA
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#home" class="md-nav__link">
+    <span class="md-ellipsis">
+      Home
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chat
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chat">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chat-spy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chat → Spy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chat-ignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chat → Ignore
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Teams
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -409,7 +588,167 @@
 
   <h1>Commands</h1>
 
-
+<h2 id="hammer">Hammer</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>/hammer <help\|info\|reload></strong></td>
+<td>Main command of hammer.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tpa">TPA</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>/tpa [player]</strong></td>
+<td>Request to teleport to a player.</td>
+</tr>
+<tr>
+<td><strong>/tpahere [player]</strong></td>
+<td>Request to teleport a player to you.</td>
+</tr>
+<tr>
+<td><strong>/tpaccept</strong></td>
+<td>Accept a TPA request.</td>
+</tr>
+<tr>
+<td><strong>/tpdeny</strong></td>
+<td>Deny a TPA request.</td>
+</tr>
+<tr>
+<td><strong>/tpcancel</strong></td>
+<td>Cancels a TPA request.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="home">Home</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>/sethome [name]</strong></td>
+<td>Set a home.</td>
+</tr>
+<tr>
+<td><strong>/home [name]</strong></td>
+<td>Teleport to a home.</td>
+</tr>
+<tr>
+<td><strong>/delhome [name]</strong></td>
+<td>Delete a home.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="chat">Chat</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>/chat [user] [optional:msg]</strong></td>
+<td>Sends a private message. If no message is provided, it toggles automatic private chat. <br> <strong>NOTE: This also replaces vanilla MC's /msg, /tell and /w</strong></td>
+</tr>
+<tr>
+<td><strong>/reply [message]</strong></td>
+<td>Replies to a message sent to you.</td>
+</tr>
+<tr>
+<td><strong>/r [message]</strong></td>
+<td>Replies to a message sent to you.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="chat-spy">Chat → Spy</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>/msgspy</strong></td>
+<td>Toggles message spy.</td>
+</tr>
+<tr>
+<td><strong>/teamspy</strong></td>
+<td>Toggles team spy.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="chat-ignore">Chat → Ignore</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>/ignore [player]</strong></td>
+<td>Ignores (blocks) a player.</td>
+</tr>
+<tr>
+<td><strong>/unignore [player]</strong></td>
+<td>Un-ignores (unblocks) a player.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="teams">Teams</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>/teams create [name]</strong></td>
+<td>Creates a team with the specified name.</td>
+</tr>
+<tr>
+<td><strong>/teams invite [player]</strong></td>
+<td>Sends an invite to the specified player.</td>
+</tr>
+<tr>
+<td><strong>/teams chat [optional:msg]</strong></td>
+<td>Sends a message to team chat. <br>If no message is provided it will toggle automatic team chat</td>
+</tr>
+<tr>
+<td><strong>/teams disband [team name]</strong></td>
+<td>Disbands the specified team. Player must be leader of specified team to disband it.</td>
+</tr>
+<tr>
+<td><strong>/teams invitation [accept/deny]</strong></td>
+<td>Accepts to denies invitation to team.</td>
+</tr>
+</tbody>
+</table>
 
 
 
