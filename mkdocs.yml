@@ -1,0 +1,146 @@
+site_name: hamiumWiki
+copyright: Copyright &copy; 2023 - 2024 hamiumSMP
+repo_url: https://github.com/hamium/smp-wiki
+repo_name: hamium/smp-wiki
+edit_uri: edit/main/docs/
+
+nav:
+  - Home: index.md
+  - Factions: 
+      - Season 5 (Latest): extra/hamiummmo.md
+      - Season 4:
+          - CIA: factions/cia.md
+          - Areial Empire: factions/ae.md
+          - Sky Crew: factions/sc.md
+          - Banana Syndicate: factions/bs.md
+          - Venevian Company: factions/vc.md
+          - Internet Explorers: factions/ie.md
+          - Commie Ghosts: factions/cg.md
+          - Opera Institute Of China: factions/oc.md
+          - Sovereign Lands of Noxus: factions/slon.md
+  - Structures:
+      - Season 5 (Latest): extra/hamiummmo.md
+      - Season 4:
+          - Spawn: structures/spawn_s4.md
+          - Tavern Complex: structures/tavern_complex_s4.md
+          - History Gazette HQ: structures/historygazette_hq_s4.md
+      - Season 3:
+          - Lockheed Martin: structures/season3/lms3base.md
+          - The Greenies: structures/season3/tgbase.md
+  - Notable players:
+      - Staff: 
+          - LeUnium: staff/unium.md
+          - ham_: staff/ham.md
+          - iSark: players/isark.md
+          - Slimsiomai: staff/slim.md
+          - Reguleo: staff/leo.md
+          - kaeud_: staff/kaeud.md
+          - claniverse: staff/realclay.md
+      - Regular Players:
+          - Season 5: extra/hamiummmo.md
+          - Season 4:
+              - ajipotato: staff/aji.md
+              - Giangvu: players/giangvu.md
+              - Hades: players/hades.md
+              - Hydra72: players/hydra.md
+              - ItzSKP: players/itzskp.md
+              - mireu: staff/mireu.md
+              - Minocp: players/minocp.md
+              - Targaros: staff/targ.md
+  - Events: 
+      - Season 5: extra/hamiummmo.md
+      - Season 4:
+          - End Fight: events/endfight.md
+          - April Fools: events/aprilfools.md
+      - Season 3:
+          - Marriage (Aji & Mireu): events/1.md
+  - Seasons:
+      - Season 1: seasons/s1.md
+      - Season 2: seasons/s2.md
+      - Season 3: seasons/s3.md
+      - Season 4: seasons/s4.md
+      - Season 5 (current): seasons/s5.md
+  - Extra: 
+      - hamiumMC Projects: 
+          - hamiumMMO: extra/hamiummmo.md
+          - hammerMC: extra/hammermc.md
+          - hammerDiscord: extra/hammerdc.md
+      - Affiliated with hamiumMC:
+          - racks: extra/racks.md
+      - Old hamiumMC:
+          - What happened?: extra/hamiummmo.md
+          - Why a new server?: extra/hamiummmo.md
+theme:
+  name: material
+  logo: assets/imgs/logo.svg
+  favicon: assets/imgs/logo.svg
+  font:
+    text: Inter
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/file-edit-outline
+    view: material/eye
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      primary: custom
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: custom
+  features:
+    - content.tooltips
+    - content.tabs.link
+    - navigation.top
+    - navigation.sections
+    - navigation.indexes
+    - navigation.path
+    - header.autohide
+    - navigation.footer
+    - navigation.instant
+    - navigation.instant.progress
+    - content.action.edit
+
+extra:
+  generator: true
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/hamium
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/h2PnjPHxNP
+
+extra_css:
+  - assets/stylesheets/colors.css
+
+markdown_extensions:
+  - pymdownx.blocks.tab
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+plugins:
+  - search
+  - glightbox : 
+      touchNavigation: true
+      effect: zoom
+      slide_effect: slide
+  - git-committers:
+      repository: hamium/smp-wiki
+      branch: main
+  - git-revision-date-localized:
+      enable_creation_date: false
+      enabled: true
